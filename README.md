@@ -1,6 +1,18 @@
-## Aveline Quigley
+<p align="center">
+  <img src="https://raw.githubusercontent.com/arvelquigley99/arvelquigley99/main/assets/header.svg" alt="Aveline Quigley — Backend Engineer" width="880"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/arvelquigley99/arvelquigley99/main/assets/now.svg" alt="now" width="720"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/Manchester-UK-555555?style=flat" height="22"/>
+</p>
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Location](https://img.shields.io/badge/Manchester-UK-555555?style=flat)
+---
 
 Backend engineer in Manchester. I build Go services that sit in front of Postgres
 and push the slow work onto a queue, and I have a strong preference for boring
@@ -50,6 +62,17 @@ minimum viable Go service skeleton. Config from the environment, structured
 logging, a health endpoint, and a graceful shutdown that actually drains
 in-flight requests instead of pretending to.
 
+**[go-queue-worker](https://github.com/arvelquigley99/go-queue-worker)** — a
+queue consumer with exponential backoff, jitter, and a dead-letter escape hatch.
+The five things every worker I've written needed: pull, try, back off, give up
+after N tries, put the body somewhere I can find it at 2am.
+
+**[sql-migrate-runner](https://github.com/arvelquigley99/sql-migrate-runner)** —
+a small CLI that reads SQL files from a directory and runs them in order,
+tracking applied versions in a `schema_migrations` table. Transaction per
+migration, roll back when you need to. I wrote it because psql and a spreadsheet
+is not a migration strategy.
+
 None of these are frameworks. They are the files I stopped wanting to rewrite.
 
 ### What I am reading about
@@ -58,6 +81,16 @@ Currently working through the Postgres 17 release notes properly rather than
 skimming them, mostly for the incremental backup and `EXPLAIN` changes. Also
 slowly rewriting an internal worker pool now that `errgroup` and structured
 concurrency have made most of my old channel gymnastics unnecessary.
+
+### 📊 Activity
+
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=arvelquigley99&show_icons=true&theme=transparent&hide_border=true&count_private=true"/>
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arvelquigley99&layout=compact&theme=transparent&hide_border=true"/>
+</p>
+<p align="center">
+  <img width="720" src="https://github-readme-activity-graph.vercel.app/graph?username=arvelquigley99&theme=github-compact&hide_border=true&radius=8"/>
+</p>
 
 ### Contact
 
