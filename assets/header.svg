@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200" font-family="'Segoe UI',-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="gocyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ADD8"/><stop offset="1" stop-color="#007D9A"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="200" fill="url(#bg)" rx="14"/>
+
+  <!-- Grid lines (like server rack lanes) -->
+  <g stroke="#1f2630" stroke-width="1">
+    <line x1="0" y1="50" x2="880" y2="50"/><line x1="0" y1="100" x2="880" y2="100"/>
+  </g>
+
+  <!-- Request/Response blocks flowing -->
+  <g>
+    <!-- Request → -->
+    <rect x="-100" y="42" width="100" height="8" rx="4" fill="#00ADD8" opacity="0.85">
+      <animate attributeName="x" from="-100" to="900" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Response ← -->
+    <rect x="900" y="56" width="60" height="8" rx="4" fill="#7dd3fc" opacity="0.7">
+      <animate attributeName="x" from="900" to="-100" dur="6s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.1;0.9;1" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Another request → -->
+    <rect x="-120" y="70" width="120" height="8" rx="4" fill="#00ADD8" opacity="0.6">
+      <animate attributeName="x" from="-120" to="900" dur="8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0.6;0" keyTimes="0;0.1;0.9;1" dur="8s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Goroutine scheduler: small squares hopping between lanes -->
+  <g transform="translate(560, 112)">
+    <line x1="0" y1="0" x2="120" y2="0" stroke="#30363d" stroke-width="1"/>
+    <line x1="0" y1="22" x2="120" y2="22" stroke="#30363d" stroke-width="1"/>
+    <line x1="0" y1="44" x2="120" y2="44" stroke="#30363d" stroke-width="1"/>
+    <rect width="8" height="8" rx="2" fill="#00ADD8" opacity="0.9">
+      <animate attributeName="y" values="0;22;44;22" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="10;50;90;50" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="8" height="8" rx="2" fill="#fbbf24" opacity="0.7">
+      <animate attributeName="y" values="22;0;44;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="30;70;110;70" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="8" height="8" rx="2" fill="#00ADD8" opacity="0.6">
+      <animate attributeName="y" values="44;22;0;22" dur="2.5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="60;100;20;60" dur="2.5s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Throughput/latency bars -->
+  <g transform="translate(700, 165)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#30363d" stroke-width="1"/>
+    <rect x="6" width="20" fill="url(#gocyan)" rx="2" height="25">
+      <animate attributeName="height" values="25;65;40;55" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-25;-65;-40;-55" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="40" width="20" fill="url(#gocyan)" rx="2" height="45">
+      <animate attributeName="height" values="45;30;75;50" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-45;-30;-75;-50" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="74" width="20" fill="url(#gocyan)" rx="2" height="60">
+      <animate attributeName="height" values="60;85;35;70" dur="5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-60;-85;-35;-70" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="108" width="20" fill="url(#gocyan)" rx="2" height="35">
+      <animate attributeName="height" values="35;55;80;40" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-35;-55;-80;-40" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="40" y="118" fill="#e6edf3" font-size="36" font-weight="700">Aveline Quigley</text>
+  <text x="42" y="148" fill="#00ADD8" font-size="18" font-weight="500">Backend Engineer</text>
+  <text x="172" y="148" fill="#8b949e" font-size="15">· Go · PostgreSQL · Redis · Manchester</text>
+  <rect x="40" y="156" width="10" height="20" fill="#00ADD8">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
