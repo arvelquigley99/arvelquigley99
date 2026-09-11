@@ -85,11 +85,11 @@ concurrency have made most of my old channel gymnastics unnecessary.
 ### 📊 Activity
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=arvelquigley99&show_icons=true&theme=transparent&hide_border=true&count_private=true"/>
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arvelquigley99&layout=compact&theme=transparent&hide_border=true"/>
+  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/stats?username=arvelquigley99&hide_border=true"/>
+  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/top-langs?username=arvelquigley99&hide_border=true"/>
 </p>
 <p align="center">
-  <img width="720" src="https://github-readme-activity-graph.vercel.app/graph?username=arvelquigley99&theme=github-compact&hide_border=true&radius=8"/>
+  <img width="720" src="https://gh-profile-stats.zli39uclan.workers.dev/activity?username=arvelquigley99&hide_border=true"/>
 </p>
 
 ### Contact
