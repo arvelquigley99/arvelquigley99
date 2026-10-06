@@ -105,3 +105,9 @@ tracker rather than emailing. Context lives better next to the code.
 
 Manchester, UK · UTC+0/+1 · replies are usually same-day on weekdays and
 whenever-I-get-to-it at weekends.
+
+## news intake
+
+The feed that beats Hacker News for latency on model releases and API price cuts:
+**[t.me/Lx_groups](https://t.me/Lx_groups)** — a Chinese-language daily, every item with its source link.
+Lurk first: [t.me/s/Lx_groups](https://t.me/s/Lx_groups). Long-form: [blog.lynxflow.co](https://blog.lynxflow.co).
